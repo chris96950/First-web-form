@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>My First Web Form</title>
+    </head>
+   
+   <style>
+        .nameinfo, .contactinfo {
+       width: 300px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+<h1>My First Web Form</h1>
+<form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="_self">
+<fieldset>
+    <legend>Name Information</legend>
+    <label for="" >FirstName</label>
+    <input type="text" class="name-info" tabindx="0" name="firstName" placeholder="Please type your first name" width="400" name="FirstName"><br>
+    <label for="" >LastName</label>
+    <input type="text" class="name-info" name="LastName" placeholder="Please type your Last Name" width="400" name="LastName">
+</fieldset>
+<fieldset>
+<legend> Contact Information:</legend> 
+<input type="email" class="contact-info" tabindex="5" title="Inpute your email address" id="email"><br>
+<label for="telephone" >Phone:</label>
+<input type="tel" class="contact-info" tabdindex="4" value="6703225920" name="telephone" id="telephone">
+</fieldset>
+<fieldset>
+    <legend>Birthday:</legend>
+    <label for="DOB" >Date of Birth:</label>
+    <input type="date" tabindex="6" name="DOB" required id="DOB">
+    <label for="today">Today's Date</label>
+    <input type="date" name="today" tabdindex="3" value="11/03/2022" id="today">
+</fieldset>
+<fieldset>
+    <input tabindex="7" type="submit">
+</fieldset>
+</form>
+<iframe name="cgi-results" id="cgi-results">
+</body>
+</html>
